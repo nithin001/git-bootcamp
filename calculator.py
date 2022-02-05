@@ -15,3 +15,9 @@ def calc_division(a, b):
         return 0
 
     return a / b
+
+
+def calc_absolute(a):
+    if a < 0:
+        return 0 - a
+    return a

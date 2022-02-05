@@ -1,5 +1,5 @@
 import unittest
-from calculator import calc_sum, calc_multiple, calc_subtract, calc_division
+from calculator import calc_sum, calc_multiple, calc_subtract, calc_division, calc_absolute
 
 
 class Test(unittest.TestCase):
@@ -18,6 +18,9 @@ class Test(unittest.TestCase):
 
     def test_calc_divide_by_zero(self):
         self.assertEqual(calc_division(500, 0), 0, "Should be 0")
+
+    def test_calc_absolute(self):
+        self.assertEqual(calc_absolute(-500), 500, "Should be 500")
 
 
 if __name__ == '__main__':
