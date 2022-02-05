@@ -21,6 +21,7 @@ class Test(unittest.TestCase):
 
     def test_calc_absolute(self):
         self.assertEqual(calc_absolute(-500), 500, "Should be 500")
+        self.assertEqual(calc_absolute(500), 500, "Should be 500")
 
 
 if __name__ == '__main__':
