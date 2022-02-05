@@ -1,5 +1,5 @@
 import unittest
-from calculator import calc_sum, calc_multiple, calc_subtract, calc_division, calc_absolute
+from calculator import calc_sum, calc_multiple, calc_subtract, calc_division, calc_absolute, calc_odd_even
 
 
 class Test(unittest.TestCase):
@@ -22,6 +22,10 @@ class Test(unittest.TestCase):
     def test_calc_absolute(self):
         self.assertEqual(calc_absolute(-500), 500, "Should be 500")
         self.assertEqual(calc_absolute(500), 500, "Should be 500")
+
+    def test_calc_odd_even(self):
+        self.assertEqual(calc_odd_even(100), 'even', "Should be even")
+        self.assertEqual(calc_odd_even(101), 'odd', "Should be odd")
 
 
 if __name__ == '__main__':

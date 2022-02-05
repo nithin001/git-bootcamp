@@ -21,3 +21,9 @@ def calc_absolute(a):
     if a < 0:
         return 0 - a
     return a
+
+
+def calc_odd_even(a):
+    if a % 2 == 0:
+        return 'even'
+    return 'odd'
