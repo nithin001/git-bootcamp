@@ -16,6 +16,9 @@ class Test(unittest.TestCase):
     def test_calc_division(self):
         self.assertEqual(calc_division(500, 5), 100, "Should be 100")
 
+    def test_calc_divide_by_zero(self):
+        self.assertEqual(calc_division(500, 0), 0, "Should be 0")
+
 
 if __name__ == '__main__':
     unittest.main()
