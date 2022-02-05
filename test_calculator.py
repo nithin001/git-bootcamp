@@ -1,5 +1,5 @@
 import unittest
-from calculator import calc_sum, calc_multiple, calc_subtract
+from calculator import calc_sum, calc_multiple, calc_subtract, calc_division
 
 
 class Test(unittest.TestCase):
@@ -12,6 +12,9 @@ class Test(unittest.TestCase):
 
     def test_calc_subtract(self):
         self.assertEqual(calc_subtract(1, 4), -3, "Should be -3")
+
+    def test_calc_division(self):
+        self.assertEqual(calc_division(500, 5), 100, "Should be 100")
 
 
 if __name__ == '__main__':
